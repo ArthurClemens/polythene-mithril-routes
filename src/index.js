@@ -36,24 +36,26 @@ const getTabs = currentRoute => {
   const tabs = [
     {
       label: "Search",
+      element: m.route.Link,
       url: {
         href: firstTabRoute,
-        oncreate: m.route.link,
-        onupdate: m.route.link,
+        selector: 'a',
       }
     },
     {
       label: "Matches",
+      element: m.route.Link,
       url: {
         href: "/matches",
-        oncreate: m.route.link,
+        selector: 'a',
       }
     },
     {
       label: "History",
+      element: m.route.Link,
       url: {
         href: "/history",
-        oncreate: m.route.link,
+        selector: 'a',
       }
     }
   ];
@@ -83,8 +85,11 @@ const App = {
     m("div", routeData.map(({ name, route }) =>
       m(Button, {
         label: name,
-        href: route,
-        oncreate: m.route.link,
+        element: m.route.Link,
+        url: {
+          href: route,
+          selector: 'a',
+        }
       })
     ))
   ]
