@@ -95,6 +95,8 @@ const App = {
   ]
 };
 
+m.route.prefix = ''; // Assumes SPA hack in place: https://github.com/csuwildcat/sghpa (see index.html and 404.html)
+
 const routes = routeData.reduce((acc, { route }) => (
   acc[route] = App,
   acc
