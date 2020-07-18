@@ -1,23 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-<title>Route example for Mithril and Polythene</title>
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta http-equiv="cleartype" content="on">
-<link rel="stylesheet" href="css/app.css">
+  <title>Route example for Mithril and Polythene</title>
+  <meta
+    name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"
+  />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta http-equiv="cleartype" content="on" />
+  <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-<div id="app" class="app"></div>
-<script>
-  // see: https://github.com/csuwildcat/sghpa
-  (function(){
-    var redirect = sessionStorage.redirect;
-    delete sessionStorage.redirect;
-    if (redirect && redirect != location.href) {
-      history.replaceState(null, null, redirect);
-    }
-  })();
-</script>
-<script src="js/index.js"></script>
+  <div id="app" class="app"></div>
+  <script>
+    // see: https://github.com/csuwildcat/sghpa
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  <script src="js/index.js"></script>
 </body>
