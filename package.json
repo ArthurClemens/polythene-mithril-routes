@@ -1,6 +1,6 @@
 {
   "name": "polythene-mithril-routes",
-  "description": "Polythene for Mithril setup example",
+  "description": "Route example for Mithril and Polythene",
   "version": "1.6.2",
   "license": "MIT",
   "repository": {
